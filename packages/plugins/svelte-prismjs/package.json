@@ -1,0 +1,59 @@
+{
+  "name": "@magidoc/plugin-svelte-prismjs",
+  "description": "A Svelte component library providing an easy to use component to display PrismJS code blocks",
+  "type": "module",
+  "license": "MIT",
+  "version": "4.1.2",
+  "svelte": "./build/index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "svelte": "./build/index.js"
+    }
+  },
+  "files": [
+    "build"
+  ],
+  "private": false,
+  "keywords": [
+    "svelte",
+    "svelte-kit",
+    "prism",
+    "prismjs",
+    "magidoc",
+    "browser"
+  ],
+  "homepage": "https://magidoc.js.org/svelte-plugins/prismjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magidoc-org/magidoc.git",
+    "directory": "packages/plugins/svelte-prismjs"
+  },
+  "scripts": {
+    "dev": "vite dev --port 5435",
+    "build": "svelte-kit sync && svelte-package --output build",
+    "test": "pnpm check",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "release": "pnpm publish --no-git-checks --access public"
+  },
+  "dependencies": {
+    "prismjs": "^1.29.0",
+    "svelte": "^4.2.1"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "2.1.0",
+    "@sveltejs/kit": "1.25.2",
+    "@sveltejs/package": "2.2.2",
+    "@types/prismjs": "^1.26.1",
+    "svelte-check": "^3.6.2",
+    "svelte2tsx": "^0.6.23",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "peerDependencies": {
+    "prismjs": "^1.29.0"
+  }
+}
