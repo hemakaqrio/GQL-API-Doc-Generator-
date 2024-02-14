@@ -1,3 +1,19 @@
+import fs from 'fs';
+import path from 'path';
+function ensureDirectoriesExist() {
+  const docsPath = path.resolve('./', 'docs');
+  const assetsPath = path.resolve('./', 'docs/assets');
+
+  if (!fs.existsSync(docsPath)) {
+    fs.mkdirSync(docsPath);
+  }
+
+  if (!fs.existsSync(assetsPath)) {
+    fs.mkdirSync(assetsPath);
+  }
+}
+
+ensureDirectoriesExist();
 
 function markdown(string) { 
   const target = string[0]
