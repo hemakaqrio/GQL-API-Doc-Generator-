@@ -15,19 +15,19 @@ function relativePath(target) {
 export default {
   introspection: {
     type: 'url',
-    url: 'https://wifzv6yr5vgavb7djuft6eh3be.appsync-api.us-east-1.amazonaws.com/graphql',  //graphql endpoint url
+    url: 'https://57wphno6n5golny243ud5eqwku.appsync-api.us-east-1.amazonaws.com/graphql',  //graphql endpoint url
 
     method: 'POST',
 
     headers: {
-      "X-API-KEY": "da2-ex3jnu5oofcyva6gfypyz5nxm4"
+      "X-API-KEY": "da2-whtwf24j4fdqbdejjyf6wnxukm"
     },
   },
   
   website: {
     template: 'carbon-multi-page',
 
-    templateVersion: '4.1.2',
+    templateVersion: '4.1.4',
 
     output: './docs',
 
