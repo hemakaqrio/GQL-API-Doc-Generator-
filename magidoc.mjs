@@ -43,7 +43,7 @@ export default {
   website: {
     template: 'carbon-multi-page',
 
-    templateVersion: '4.1.4',
+    templateVersion: '4.1.3',
 
     output: './docs',
 
